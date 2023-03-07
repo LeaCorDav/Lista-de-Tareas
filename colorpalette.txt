@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+$Old-index-card-isolated-on-a-white-background.-1-hex: #729DF2;
+$Old-index-card-isolated-on-a-white-background.-2-hex: #91B2F2;
+$Old-index-card-isolated-on-a-white-background.-3-hex: #BBCDF2;
+$Old-index-card-isolated-on-a-white-background.-4-hex: #F2F2EB;
+$Old-index-card-isolated-on-a-white-background.-5-hex: #F25757;
+
+/* Color Theme Swatches in RGBA */
+$Old-index-card-isolated-on-a-white-background.-1-rgba: rgba(113,156,242, 1);
+$Old-index-card-isolated-on-a-white-background.-2-rgba: rgba(145,177,242, 1);
+$Old-index-card-isolated-on-a-white-background.-3-rgba: rgba(186,205,242, 1);
+$Old-index-card-isolated-on-a-white-background.-4-rgba: rgba(242,241,234, 1);
+$Old-index-card-isolated-on-a-white-background.-5-rgba: rgba(242,87,87, 1);
+
+/* Color Theme Swatches in HSLA */
+$Old-index-card-isolated-on-a-white-background.-1-hsla: hsla(219, 83, 69, 1);
+$Old-index-card-isolated-on-a-white-background.-2-hsla: hsla(219, 79, 76, 1);
+$Old-index-card-isolated-on-a-white-background.-3-hsla: hsla(219, 68, 84, 1);
+$Old-index-card-isolated-on-a-white-background.-4-hsla: hsla(56, 22, 93, 1);
+$Old-index-card-isolated-on-a-white-background.-5-hsla: hsla(0, 85, 64, 1);

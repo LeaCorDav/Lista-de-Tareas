@@ -1,0 +1,32 @@
+.CreateTodoButton {
+    cursor: pointer;
+    font-size: 50px;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    font-weight: bold;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: 64px;
+    color: #BBCDF2;
+    background-color: #F2F2EB;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px #729DF2;
+    z-index: 2;
+
+    transform: rotate(0);
+    transition: 0.4s ease;
+}
+
+
+.CreateTodoButton:hover {
+    transform: rotate(360deg);
+    color: #F2F2EB;
+    background-color: #BBCDF2;
+}

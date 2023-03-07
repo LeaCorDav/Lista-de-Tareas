@@ -1,0 +1,61 @@
+.card {
+    background-color: #F2F2EB;
+    border-radius: 2rem;    
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.check{
+    position: absolute;
+    left: 12px;
+    background-color: #A6A690;
+    height: 48px;
+    width: 48px;
+    border-radius: 35%;
+}
+
+.text {
+    margin: 24px 0 24px 36px;
+    
+    font-size: 18px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(45deg, #BBCDF2, #a6a69000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: loading 3s ease-in-out infinite;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #A6A690;
+    height: 15px;
+    width: 15px;
+    border-radius: 35%;
+}
+
+.check, .close {
+    background: radial-gradient(#BBCDF2, rgba(114, 157, 242, 0));
+    background-size: 400% 400%;
+    animation: loading 3s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: -100% 50%;
+    }
+    50% {
+        background-position: 200% 50%;
+    }
+    100% {
+        background-position: -100% 50%;
+    }
+}
