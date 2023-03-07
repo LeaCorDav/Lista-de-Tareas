@@ -10,7 +10,9 @@ import { Background } from '../background';
 import linkedIn from "../img/linkedin.png";
 import { Modal } from "../Modal";
 import { TodoForm } from "../TodoForm";
-import { MyLoader } from "../Skeletons/loader";
+import { MyLoader } from "../Skeletons/loader.js";
+import { Empty } from "../Skeletons/empty.js";
+import { Errores } from "../Skeletons/error";
 
 function AppUI(){
     const {
@@ -41,9 +43,9 @@ function AppUI(){
                 <TodoCounter /> 
                 <TodoSearch />
                 <TodoList>
-                    {error && <p>Hubo un error. Por favor recarga la página.</p> }
+                    {error && <Errores/> }
                     {loading && <MyLoader/> }
-                    {(!loading && !searchedTodos.length) && <p>¡Crea tu primera tarea!</p> }
+                    {(!loading && !searchedTodos.length) && <Empty/> }
 
                     {searchedTodos.map(todo => (
                     <TodoItem 

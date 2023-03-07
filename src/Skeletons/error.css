@@ -1,0 +1,40 @@
+.error-card {
+    background-color: #F2F2EB;
+    border-radius: 2rem;    
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    height: auto;
+    width: 75%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 12.5%;
+    padding: 12px;
+}
+
+.error-check{    
+    position: absolute;
+    left: 12px;
+    background-color: rgba(242, 87, 87, 0.25);
+    height: 48px;
+    width: 48px;
+    border-radius: 35%;
+}
+
+.error-text {
+    margin-left: 24px;
+    width: calc(100% - 96px);
+    font-size: 18px;
+    color: rgba(242, 87, 87, 0.75);
+}
+
+.error-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(242, 87, 87, 0.25);
+    height: 15px;
+    width: 15px;
+    border-radius: 35%;
+}
