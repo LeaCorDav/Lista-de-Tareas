@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Lista-de-Tareas/static/css/main.8a00203d.css",
+    "main.js": "/Lista-de-Tareas/static/js/main.728b5fe3.js",
+    "static/media/linkedin.png": "/Lista-de-Tareas/static/media/linkedin.c9692703eb64545eef60.png",
+    "index.html": "/Lista-de-Tareas/index.html",
+    "main.8a00203d.css.map": "/Lista-de-Tareas/static/css/main.8a00203d.css.map",
+    "main.728b5fe3.js.map": "/Lista-de-Tareas/static/js/main.728b5fe3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a00203d.css",
+    "static/js/main.728b5fe3.js"
+  ]
+}
