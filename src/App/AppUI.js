@@ -32,7 +32,7 @@ function AppUI(){
             <div className="container">
                 <section className="hero">
                     <h1>Lista de <strong>TAREAS</strong></h1>
-                    <p>Escribe las tareas que debes cumplir, catalógalas, configura la fecha límite y crea recordatorios.</p> <br/>
+                    <p>Crea tu propia lista de pendientes que debes cumplir para que siempre las tengas a la mano. Luego puedes marcarlas como completadas y eliminar las que hayas terminado.</p> <br/>
                     <p>¡Conectemos en redes!</p>
                     <a href="https://www.linkedin.com/in/leandro-cordero/" target="_blank">
                         <img src={linkedIn} alt="logo-linkedin" />
