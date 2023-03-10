@@ -1,25 +1,26 @@
 .lista {
     position: relative;
-    width: 100%;    
+    width: 100%;  
+    
+    display: grid;
+    grid-template-columns: repeat(3, minmax(190px, 1fr));;
+    gap: 15px;  
 }
 
 ul {
     margin: 0;
     padding: 0 0 60px 0;
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(190px, 1fr));;
-    gap: 15px;
 }
 
-@media (max-width: 770px) {
-    ul {
+@media (max-width: 940px) {
+    .lista {
         grid-template-columns: repeat(2, minmax(190px, 1fr));;
     }
 }
 
 @media (max-width: 480px) {
-    ul {
+    .lista {
         grid-template-columns: 1fr;
     }
 }

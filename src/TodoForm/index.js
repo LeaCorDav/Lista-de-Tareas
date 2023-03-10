@@ -25,6 +25,7 @@ function TodoForm({addTodo, setOpenModal,}){
             <textarea 
                 value={newTodoValue}
                 onChange={onChange}
+                maxlength="60"
                 placeholder="Escribe una nueva tarea" 
             />
             <div className="botones">
