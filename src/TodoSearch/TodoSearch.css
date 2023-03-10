@@ -23,6 +23,29 @@
     outline-color: hsl(0, 0%, 90%);
 }
 
+.TodoSearch:disabled {
+    background: radial-gradient(rgba(197, 197, 197, 0.75), rgba(114, 157, 242, 0));
+    background-size: 400% 400%;
+    animation: loading 3s ease-in-out infinite;
+}
+
+.TodoSearch:disabled::placeholder{
+    color: rgb(255, 255, 255, 0.5);
+}
+
+@keyframes loading {
+    0% {
+        background-position: -100% 50%;
+    }
+    50% {
+        background-position: 200% 50%;
+    }
+    100% {
+        background-position: -100% 50%;
+    }
+}
+
+
 @media (max-width: 770px) {
     .TodoSearch {
         margin: 0 25%;

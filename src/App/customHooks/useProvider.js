@@ -1,15 +1,15 @@
 import React from "react";
 import {useLocalStorage} from "./useLocalStorage";
 
-const TodoContext = React.createContext();
-
-function TodoProvider(props) {
+function useProvider() {
+    /* Llama al custom Hook de LocalStorage */
     const {
         item: todos,
         savedItem: saveTodos,
         loading,
         error,
-    } = useLocalStorage("TODOS_V1", []);
+        sync
+    } = useLocalStorage("TODOS_V1", []); /* Así solo escucha los cambios en TODOS_V1 y no todo */
     
     /* CONTABILIZAR TAREAS TOTALES Y COMPLETADAS */  
     const completedTodos = todos.filter(tarea => !!tarea.completed).length; /* Filtra el array de To Do's del estadoReact con solo las compeltadas y las contabiliza */
@@ -58,24 +58,21 @@ function TodoProvider(props) {
         saveTodos(newTodos);
     }
 
-    return (
-        <TodoContext.Provider value={{
-            error,
-            loading,
-            totalTodos,
-            completedTodos,
-            searchValue,
-            setSearchValue,
-            searchedTodos,
-            toggleCompleteTodo,
-            deleteTodo,
-            addTodo,
-            openModal,
-            setOpenModal,
-        }}>
-            {props.children}
-        </TodoContext.Provider>
-    );
+    return {
+        error,
+        loading,
+        totalTodos,
+        completedTodos,
+        searchValue,
+        setSearchValue,
+        searchedTodos,
+        toggleCompleteTodo,
+        deleteTodo,
+        addTodo,
+        openModal,
+        setOpenModal,
+        sync      
+    };
 }
 
-export {TodoContext, TodoProvider};
+export {useProvider};

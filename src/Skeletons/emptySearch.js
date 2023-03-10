@@ -1,12 +1,12 @@
 import React from "react";
 import "./empty.css";
 
-const Empty = () => (
+const EmptySearch = (props) => (  
   <div className="empty-card">
     <span className="empty-check"></span>
-    <p className="empty-text">Haz click en el ícono de "+" en la parte inferior para crear una nueva tarea</p>
+    <p className="empty-text">No hubo resultados para {props.searchText} . Prueba con otra palabra.</p>
     <span className="empty-close"></span>
   </div>
 )
 
-export {Empty};
+export {EmptySearch};

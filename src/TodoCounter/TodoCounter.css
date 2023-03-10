@@ -6,3 +6,7 @@
     padding: 48px;
     color: #73736F;
 }
+
+.TodoCounter--loading{
+    opacity: 25%;
+}

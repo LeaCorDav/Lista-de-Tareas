@@ -1,10 +1,7 @@
 import React from "react";
-import { TodoContext } from "../TodoContext";
 import "./TodoSearch.css";
 
-function TodoSearch(){
-    const { searchValue, setSearchValue } = React.useContext(TodoContext);
-
+function TodoSearch({searchValue, setSearchValue, loading}){
     /* Escucha los eventos o cambios en el input */
     const onBusqueda = (event) => {
         console.log(event.target.value);
@@ -16,7 +13,9 @@ function TodoSearch(){
         className="TodoSearch" 
         placeholder="Busca tu tarea"
         value={searchValue}
-        onChange={onBusqueda}></input>
+        onChange={onBusqueda}
+        disabled={loading}
+        />
     );
 }
 

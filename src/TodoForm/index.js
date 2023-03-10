@@ -1,8 +1,7 @@
 import React from "react";
 import "./todoform.css";
-import { TodoContext } from "../TodoContext";
 
-function TodoForm(){
+function TodoForm({addTodo, setOpenModal,}){
     /* Nuevo array vacio y su estado para actualizarlo */
     const [newTodoValue, setNewTodoValue] = React.useState("");
 
@@ -10,13 +9,7 @@ function TodoForm(){
     const onChange = (event) => {
         setNewTodoValue(event.target.value);
     };
-    
-    /* Traemos la funcion del TodoContext */
-    const {
-        addTodo,
-        setOpenModal,
-    } = React.useContext(TodoContext);
-
+        
     const onCancel = () => {
         setOpenModal(false);
     };
